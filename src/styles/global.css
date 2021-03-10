@@ -1,0 +1,24 @@
+html {
+  --white: #ffffff;
+  --green: #72ec95;
+  --dark-green: #5db881;
+  --green-hover: #47ca6b;
+  --background: #f8f8f8;
+  --background-dark: #e5e5e5;
+  --dark-gray: #e5e5e5;
+  --red: #ff6868;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background-dark);
+}
+
+body, button, input, textarea {
+  font: 400 0.8rem 'Poppins';
+}

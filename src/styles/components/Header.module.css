@@ -1,0 +1,42 @@
+.container {
+  background: var(--green);
+
+  width: 100%;
+  min-height: 20vh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container > header {
+  display: flex;
+  justify-content: space-between;
+
+  width: -webkit-fill-available;
+
+  margin: 1rem;
+}
+
+.container > header img {
+  width: 2.2rem;
+  height: 2.2rem;
+
+  border-radius: 50%;
+
+  transition: filter 0.2s;
+}
+
+.container > header img:hover {
+  filter: brightness(0.95);
+}
+
+.container p {
+  width: 80vw;
+  text-align: center;
+
+  margin: 1rem;
+}

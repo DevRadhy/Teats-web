@@ -1,0 +1,10 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M25.1562 32.5C25.1562 35.2617 23.543 37.5 20.7812 37.5H10.4688C7.70703 37.5 6.09375 35.2617 6.09375 32.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M26.25 26.25C27.6305 26.25 28.75 27.6492 28.75 29.375C28.75 31.1008 27.6305 32.5 26.25 32.5H5C3.61953 32.5 2.5 31.1008 2.5 29.375C2.5 27.6492 3.61953 26.25 5 26.25" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M26.875 26.25H14.0086C13.8431 26.2501 13.6843 26.3158 13.5672 26.4328L11.4711 28.5289C11.4421 28.558 11.4076 28.581 11.3697 28.5967C11.3317 28.6125 11.2911 28.6206 11.25 28.6206C11.2089 28.6206 11.1683 28.6125 11.1303 28.5967C11.0924 28.581 11.0579 28.558 11.0289 28.5289L8.93281 26.4328C8.81569 26.3158 8.65695 26.2501 8.49141 26.25H4.375C3.87772 26.25 3.40081 26.0525 3.04917 25.7008C2.69754 25.3492 2.5 24.8723 2.5 24.375V24.375C2.5 23.8777 2.69754 23.4008 3.04917 23.0492C3.40081 22.6975 3.87772 22.5 4.375 22.5H26.875C27.3723 22.5 27.8492 22.6975 28.2008 23.0492C28.5525 23.4008 28.75 23.8777 28.75 24.375C28.75 24.8723 28.5525 25.3492 28.2008 25.7008C27.8492 26.0525 27.3723 26.25 26.875 26.25Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M5 21.5625V21.5453C5 17.2484 8.51562 15 12.8125 15H18.4375C22.7344 15 26.25 17.2656 26.25 21.5625V21.5453" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M18.8281 8.75L19.4094 13.7477" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M20 37.5H30.8836C31.5143 37.5 32.1217 37.2616 32.584 36.8326C33.0464 36.4036 33.3295 35.8157 33.3766 35.1867L36.1719 8.75" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M28.75 8.75L30 3.75L33.6719 2.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.5 8.75H37.5" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+</svg>
