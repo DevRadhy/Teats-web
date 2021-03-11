@@ -42,10 +42,6 @@
   margin-top: 10px;
 }
 
-.gridContainer header span strong {
-  color: var(--green);
-}
-
 .gridContainer main {
   flex: 1;
   margin-top: 8px;
@@ -58,13 +54,23 @@
   margin: 1rem 0;
 }
 
+.gridContainer footer > span {
+  font-weight: 700;
+  margin: 0 1rem 0 0;
+  font-size: 0.9rem;
+}
+
 .gridContainer footer > button {
   display: flex;
   justify-content: center;
   align-items: center;
 
   background: var(--green);
-  color: var(--white);
+  color: #222;
+
+  font-weight: 600;
+
+  filter: contrast(120%);
 
   border-radius: 6px;
   border: none;
@@ -79,12 +85,8 @@
   background: var(--green-hover);
 }
 
-.gridContainer footer > span {
-  font-weight: 700;
-  margin: 0 1rem 0 0;
-  font-size: 0.9rem;
-}
-
 .gridContainer footer > button img {
+  width: 20px;
+  height: 20px;
   margin: 0 5px 0 0;
 }
