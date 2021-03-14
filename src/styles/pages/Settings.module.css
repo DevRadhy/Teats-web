@@ -1,20 +1,4 @@
-.container > header {
-  width: 100%;
-  min-height: 20vh;
-
-  background: var(--green);
-
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 0 0 1rem 1rem;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  position: relative;
-}
-
-.container > header > img {
+.container section > img:first-child {
   width: 10rem;
   height: 10rem;
 
@@ -23,15 +7,7 @@
   margin-top: 1rem;
 }
 
-.container > header span {
-  margin: 2rem;
-}
-
-.container > header article {
-  width: 100%;
-}
-
-.container > header article img {
+.container .filter {
   width: 24px;
   height: 24px;
 
@@ -42,7 +18,7 @@
   transition: filter 0.2s;
 }
 
-.container > header span + article img {
+.container .filter {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -50,7 +26,7 @@
   margin-bottom: 2rem;
 }
 
-.container > header article img:hover {
+.container .filter:hover {
   filter: brightness(0.95);
 }
 
@@ -65,6 +41,36 @@
   max-width: 1000px;
 }
 
+.container > button {
+  z-index: 1;
+
+  width: 4rem;
+  height: 4rem;
+
+  margin: 2rem;
+
+  background: var(--green);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+
+  transition: filter 0.2s;
+}
+
+.container > button:hover {
+  filter: brightness(0.9);
+  animation: rotate 0.2s linear;
+}
+
 @media (max-width: 1080px) {
   .gridContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -77,5 +83,15 @@
     margin: 1rem auto;
 
     grid-template-columns: 1fr;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(0);
   }
 }

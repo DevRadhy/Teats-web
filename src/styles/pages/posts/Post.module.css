@@ -1,0 +1,38 @@
+.container {
+  max-width: 100vw;
+  padding: 0 10vw;
+
+  background: var(--white);
+}
+
+.container h1, h2 {
+  padding: 3px 2px;
+}
+
+.container p {
+  margin: 1px;
+}
+
+.container img {
+  width: 100%;
+  margin: 4px;
+}
+
+.container pre {
+  flex: 1;
+
+  background: #3f4447;
+  color: rgba(255, 255, 255, 0.9);
+  overflow-x: auto;
+  border-radius: 3px;
+
+  max-width: 411px;
+  min-height: 1em;
+
+  margin: 4px;
+  padding: 34px 16px 32px 32px;
+
+  text-align: left;
+  tab-size: 2;
+  white-space: pre;
+}
