@@ -11,11 +11,13 @@ export default function Post({ postData }) {
         <title>{postData.title}</title>
       </Head>
 
-      <article>
-        <h1>{postData.title}</h1>
+      <h1 className={styles.title}>{postData.title}</h1>
+      
+      <img src="/favicon.png" alt="Teats Logo"/>
 
+      <main>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>
+      </main>
     </div>
   );
 }

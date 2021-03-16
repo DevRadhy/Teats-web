@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { Header } from '../../src/components/Header';
 import { FoodCard } from '../../src/components/FoodCard';
 
-import styles from '../../src/styles/pages/Settings.module.css';
+import styles from '../../src/styles/pages/users/Settings.module.css';
 
 export default function Settings() {
   const router = useRouter();

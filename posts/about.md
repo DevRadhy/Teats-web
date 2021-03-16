@@ -3,10 +3,6 @@ title: 'About Us'
 date: '2021-03-14'
 ---
 
-# About us
-
-![favicon](/About-us-assets/favicon.png)
-
 # Quem somos
 
 **TeatsApp** é uma plataforma que aproxima as pessoas do que elas gostam, **comida** 🍣. O app foi criado com **intuído educacional**, não visando lucros, por isso que todos podemos usar de graça =). O app foi criado por mim, **Lucas Jantsch Guedes**, para todos vocês que usam o app com carinho, tanto quem pede quanto quem faz parte do time de pessoas que levam **alegria em uma caixinha ♥️.**

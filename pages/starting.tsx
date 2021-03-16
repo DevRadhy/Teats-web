@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Header } from '../src/components/Header';
 
@@ -7,12 +8,19 @@ import styles from '../src/styles/pages/Starting.module.css';
 
 export default function Starting() {
   const [preference, setPreferece] = useState("");
+  const router = useRouter();
 
   useEffect(() => {
-    localStorage.setItem("preference", preference);
+    const preferenceExists = localStorage.getItem('preference');
+    
+    if(!preferenceExists) {
+      localStorage.setItem("preference", preference);
+    }
+
+    router.push('/');
   }, [preference]);
 
-  async function setPreferenceHandler(props: string) {
+  function setPreferenceHandler(props: string) {
     setPreferece(props);
   }
   
@@ -45,7 +53,7 @@ export default function Starting() {
           type="button"
           onClick={() => setPreferenceHandler("entregar")}
         >
-          <Link href="/" replace>
+          <Link href="/" replace >
             <a>
               <img src="/icons/fast-food.svg" alt="Fast Food" />
               <span>Entregar</span>

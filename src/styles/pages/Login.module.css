@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);
+
 .container {
   background: var(--green);
 
@@ -28,8 +30,62 @@
 }
 
 .container > header > img:last-child {
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
 
   position: absolute;
+}
+
+.container > section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container > section > span {
+  font-weight: 600;
+}
+
+.container > section > button {
+  width: 60vw;
+  max-width: 400px;
+  height: 42px;
+
+  background-color: #4285f4;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.container > section button div {
+  margin-left: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.container > section button div img {
+  width: 18px;
+  height: 18px;
+  margin-top: 11px;
+}
+.container > section button p {
+  flex: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: "Roboto";
+}
+.container button:hover {
+  box-shadow: 0 0 6px #4285f4;
+}
+.container button:active {
+  background: #1669F2;
 }
