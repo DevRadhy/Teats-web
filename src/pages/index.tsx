@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { FoodCard } from '../src/components/FoodCard';
-import { Footer } from '../src/components/Footer';
-import { Header } from '../src/components/Header';
+import { FoodCard } from '../components/FoodCard';
+import { Footer } from '../components/Footer';
+import { Header } from '../components/Header';
 
 import styles from '../src/styles/pages/Home.module.css';
 

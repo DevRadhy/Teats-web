@@ -13,8 +13,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Ubuntu:wght@700&display=swap"
             rel="stylesheet"
           ></link>
-          
-          <script data-ad-client="ca-pub-7903729949301030" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         </Head>
         <body>
           <Main />

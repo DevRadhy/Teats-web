@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { Header } from '../src/components/Header';
+import { Header } from '../components/Header';
 
-import styles from '../src/styles/pages/Starting.module.css';
+import styles from '../styles/pages/Starting.module.css';
 
 export default function Starting() {
   const [preference, setPreferece] = useState("");

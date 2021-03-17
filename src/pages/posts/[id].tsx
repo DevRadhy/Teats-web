@@ -1,8 +1,8 @@
 import Head from 'next/head';
 
-import { getAllPostIds, getPostData } from '../../src/lib/posts';
+import { getAllPostIds, getPostData } from '../../lib/posts';
 
-import styles from '../../src/styles/pages/posts/Post.module.css';
+import styles from '../../styles/pages/posts/Post.module.css';
 
 export default function Post({ postData }) {
   return (

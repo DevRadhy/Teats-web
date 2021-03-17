@@ -1,6 +1,6 @@
 import { signIn, useSession } from 'next-auth/client';
 
-import styles from '../src/styles/pages/Login.module.css';
+import styles from '../styles/pages/Login.module.css';
 
 export default function Login() {
   const [session, loading] = useSession();
