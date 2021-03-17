@@ -8,7 +8,7 @@ export default function Post({ postData }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{postData.title}</title>
+        <title>Teats | {postData.title}</title>
       </Head>
 
       <h1 className={styles.title}>{postData.title}</h1>
