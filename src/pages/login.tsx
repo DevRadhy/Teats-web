@@ -27,7 +27,7 @@ export default function Login() {
               <p><strong>Continue com o Google</strong></p>
             </button>
 
-            <button>Continue com o Facebook</button>
+            <button onClick={() => signIn('facebook', { callbackUrl: '/' })}>Continue com o Facebook</button>
           </>
         }
       </section>
