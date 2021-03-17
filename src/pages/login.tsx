@@ -13,7 +13,7 @@ export default function Login() {
       </Head>
 
       <header>
-        <img src="/background.jpg" alt="Pequenique" />
+        <img src="/background.jpg" alt="Picnic" />
         <img src="/favicon-light.png" alt="Teats Logo"/>
       </header>
 
@@ -30,7 +30,13 @@ export default function Login() {
           <p><strong>Continue com o Google</strong></p>
         </button>
 
-        <button onClick={() => signIn('facebook', { callbackUrl: '/' })}>Continue com o Facebook</button>
+        <button
+          onClick={() => signIn('facebook', { callbackUrl: '/' })}
+        >
+          <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/szGrb_tkxMW.png" alt="Facebook"/>
+          
+          <span>Continue com o Facebook</span>
+        </button>
       </section>
     </div>
   );
