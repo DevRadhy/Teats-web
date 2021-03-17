@@ -41,12 +41,13 @@
   align-items: center;
   flex-direction: column;
 
+  font-family: "Roboto";
   font-weight: 600;
 }
 
 /* Login with Google button */
 
-.container > section button:first-child {
+.container > section span + button {
   width: 60vw;
   max-width: 400px;
   height: 42px;
@@ -61,29 +62,33 @@
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
   border: none;
 }
-.container > section button:first-child div {
+
+.container > section span + button div {
   margin-left: 1px;
   width: 40px;
   height: 40px;
   border-radius: 2px;
   background-color: #ffffff;
 }
-.container > section button:first-child div img {
+
+.container > section span + button div img {
   width: 18px;
   height: 18px;
   margin-top: 11px;
 }
-.container > section button:first-child p {
+
+.container > section span + button p {
   flex: 1;
   text-align: center;
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.2px;
-  font-family:"Roboto";
 }
+
 .container button:hover {
   box-shadow: 0 0 6px #4285f4;
 }
+
 .container button:active {
   background: #1669F2;
 }
@@ -119,5 +124,4 @@
   color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.2px;
-  font-family: "Roboto";
 }
