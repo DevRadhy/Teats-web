@@ -40,9 +40,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  font-family: "Roboto";
   font-weight: 600;
+}
+
+.container > section button {
+  font: 700 1rem "Roboto";
 }
 
 /* Login with Google button */
