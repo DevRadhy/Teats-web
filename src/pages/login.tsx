@@ -21,13 +21,10 @@ export default function Login() {
         <span>Not Sign In</span>
 
         <button
-          onClick={() => signIn('google', { callbackUrl: '/' })}
+          onClick={() => signIn('google', {callbackUrl: '/'})}
         >
-          <div>
-            <img className="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
-          </div>
-
-          <p><strong>Continue com o Google</strong></p>
+          <img src="/icons/google.svg" alt="Google"/>
+          Fazer login com o Google
         </button>
 
         <button

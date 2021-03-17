@@ -44,64 +44,31 @@
 }
 
 .container > section button {
+  width: 211px;
+  height: 40px;
+
+  color: #ffffff;
+
   font: 700 1rem "Roboto";
 }
 
-/* Login with Google button */
-
-.container > section span + button {
-  width: 60vw;
-  max-width: 400px;
-  height: 42px;
-
-  background: #4285f4;
-
+.container > section button:first-child {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
-  border-radius: 4px;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
-  border: none;
-}
-
-.container > section span + button div {
-  margin-left: 1px;
-  width: 40px;
-  height: 40px;
   border-radius: 2px;
-  background-color: #ffffff;
+
+  padding: 8px;
 }
 
-.container > section span + button div img {
-  width: 18px;
-  height: 18px;
-  margin-top: 11px;
-}
+.container > section button:first-child img {
+  width: 24px;
+  height: 24px;
 
-.container > section span + button p {
-  flex: 1;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  letter-spacing: 0.2px;
+  margin-right: 24px;
 }
-
-.container button:hover {
-  box-shadow: 0 0 6px #4285f4;
-}
-
-.container button:active {
-  background: #1669F2;
-}
-
-/* Login with Facebook button */
 
 .container > section button:last-child {
-  width: 60vw;
-  max-width: 400px;
-  height: 40px;
-
   background: #1877f2;
 
   margin-top: 1rem;
@@ -123,7 +90,6 @@
 .container > section button:last-child span {
   flex: 1;
   text-align: center;
-  color: #ffffff;
   font-size: 14px;
   letter-spacing: 0.2px;
 }
