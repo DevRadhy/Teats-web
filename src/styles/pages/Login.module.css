@@ -91,3 +91,13 @@
   height: 24px;
   margin: 0 24px 0 11px;
 }
+
+@media (min-width: 720px) {
+  .container > header > img:first-child {
+    height: 60vh;
+  }
+
+  .container > section {
+    flex-direction: row;
+  }
+}
