@@ -35,11 +35,14 @@
 }
 
 .container > section > a img {
+  width: 24px;
+  height: 24px;
   margin-right: 8px;
 }
 
 .container > section > a svg {
-  min-width: 24px;
+  width: 24px;
+  height: 24px;
   margin-right: 8px;
 }
 
