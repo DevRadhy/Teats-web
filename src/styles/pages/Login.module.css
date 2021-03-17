@@ -40,20 +40,18 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
-.container > section > span {
   font-weight: 600;
 }
 
 /* Login with Google button */
 
-.container > section > button:first-child {
+.container > section button:first-child {
   width: 60vw;
   max-width: 400px;
   height: 42px;
 
-  background-color: #4285f4;
+  background: #4285f4;
 
   display: flex;
   justify-content: space-between;
