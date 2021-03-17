@@ -1,24 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Header } from '../components/Header';
 
 import styles from '../styles/pages/Starting.module.css';
 
 export default function Starting() {
   const [preference, setPreferece] = useState("");
-  const router = useRouter();
-
-  useEffect(() => {
-    const preferenceExists = localStorage.getItem('preference');
-    
-    if(!preferenceExists) {
-      localStorage.setItem("preference", preference);
-    }
-
-    router.push('/');
-  }, [preference]);
 
   function setPreferenceHandler(props: string) {
     setPreferece(props);
