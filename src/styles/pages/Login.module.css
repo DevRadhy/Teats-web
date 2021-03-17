@@ -34,6 +34,10 @@
   position: absolute;
 }
 
+.container > span {
+  margin-top: 1rem;
+}
+
 .container > section {
   flex: 1;
   display: flex;
@@ -53,37 +57,37 @@
 
   display: flex;
   align-items: center;
+
+  border: none;
 }
 
 .container > section button img {
   margin-right: 24px;
 }
 
-.container > section button:nth-child(2) {
+.container > section button:nth-child(1) {
   background: #ffffff;
   color: #222222;
 
   border-radius: 2px;
-
-  padding: 8px;
 }
 
-.container > section button:nth-child(2) img {
+.container > section button:nth-child(1) img {
   width: 40px;
   height: 40px;
 }
 
-.container > section button:nth-child(3) {
+.container > section button:nth-child(2) {
   background: #1877f2;
   color: #ffffff;
 
   margin-top: 1rem;
 
   border-radius: 4px;
-  border: none;
 }
 
-.container > section button:nth-child(3) img {
+.container > section button:nth-child(2) img {
   width: 24px;
   height: 24px;
+  margin: 0 24px 0 11px;
 }

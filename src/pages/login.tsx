@@ -17,9 +17,9 @@ export default function Login() {
         <img src="/favicon-light.png" alt="Teats Logo"/>
       </header>
 
+      <span>Faça login para continuar</span>
+      
       <section>
-        <span>Not Sign In</span>
-
         <button
           onClick={() => signIn('google', {callbackUrl: '/'})}
         >
