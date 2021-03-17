@@ -53,7 +53,7 @@ export function Footer() {
           Contact us
         </a>
 
-        <Link href="https://teats-web-devlucas.vercel.app/posts/about">
+        <Link href="/posts/about">
           <a>
             <img src="/icons/information-circle-outline.svg" alt="Info"/>
             About us
