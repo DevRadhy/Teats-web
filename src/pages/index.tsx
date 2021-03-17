@@ -3,7 +3,7 @@ import { FoodCard } from '../components/FoodCard';
 import { Footer } from '../components/Footer';
 import { Header } from '../components/Header';
 
-import styles from '../src/styles/pages/Home.module.css';
+import styles from '../styles/pages/Home.module.css';
 
 export default function Home() {
   return (

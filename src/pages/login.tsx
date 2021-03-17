@@ -16,6 +16,7 @@ export default function Login() {
         { !session &&
           <>
             <span>Not Sign In</span>
+
             <button
               onClick={() => signIn('google', { callbackUrl: '/' })}
             >
@@ -25,6 +26,8 @@ export default function Login() {
 
               <p><strong>Continue com o Google</strong></p>
             </button>
+
+            <button>Continue com o Facebook</button>
           </>
         }
       </section>
