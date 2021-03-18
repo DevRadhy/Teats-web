@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
 
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
@@ -11,6 +13,11 @@ export default function Post({ postData }) {
         <title>Teats | {postData.title}</title>
       </Head>
 
+      <Header
+        text="Obrigado pela sua atenção em querer saber quem somos e como chegamos aqui, fico feliz em ver você prestes a conhecer nossa história =)"
+        smallText="Se você achou algo diference um algumas página continue lendo"
+      />
+
       <h1 className={styles.title}>{postData.title}</h1>
       
       <img src="/favicon.png" alt="Teats Logo"/>
@@ -18,6 +25,8 @@ export default function Post({ postData }) {
       <main>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </main>
+
+      <Footer />
     </div>
   );
 }
