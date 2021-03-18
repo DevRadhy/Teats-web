@@ -26,6 +26,7 @@
 .container > header img {
   width: 2.2rem;
   height: 2.2rem;
+  cursor: pointer;
 
   border-radius: 50%;
 
@@ -34,6 +35,50 @@
 
 .container > header img:hover {
   filter: brightness(0.95);
+}
+
+.container > header > div {
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: var(--white);
+  font-weight: 700;
+
+  width: 15rem;
+
+  margin: 2.8rem 1rem 0 0;
+  padding: 1rem;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  position: absolute;
+  right: 0;
+}
+
+.container > header > div ul {
+  text-align: center;
+}
+
+.container > header > div ul > li {
+  list-style: none;
+  border-bottom: 1px #aaa solid;
+  cursor: pointer;
+  margin: 1rem 0 ;
+}
+
+.container > header > div ul > li:hover {
+  color: #888888;
+}
+
+.container > header > div span {
+  color: var(--red);
+  margin-top: 1rem;
+  cursor: pointer
 }
 
 .container p {

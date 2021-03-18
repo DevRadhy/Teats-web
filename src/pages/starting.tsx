@@ -6,7 +6,7 @@ import { Header } from '../components/Header';
 import styles from '../styles/pages/Starting.module.css';
 
 export default function Starting() {
-  const [preference, setPreferece] = useState("");
+  const [preference, setPreferece] = useState('');
 
   function setPreferenceHandler(props: string) {
     setPreferece(props);
