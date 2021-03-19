@@ -1,19 +1,26 @@
-import { ReactNode, SelectHTMLAttributes } from "react";
+import { SelectHTMLAttributes } from "react";
 
 import styles from '../styles/components/Select.module.css';
 
 interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
   label: string;
   name: string;
-  children: ReactNode;
+  options: Array<{
+    value: number;
+    label: string;
+  }>
 }
 
-export function Select({ label, name, children, ...rest }: SelectProps) {
+export function Select({ label, name, options, ...rest }: SelectProps) {
   return (
     <div className={styles.container}>
       <label htmlFor={name}>{label}</label>
       <select defaultValue="0" id={name} {...rest} >
-        {children}
+        {options.map(option => {
+          return (
+            <option key={option.value} value={option.value}>{option.label}</option>
+          );
+        })}
       </select>
     </div>
   );
