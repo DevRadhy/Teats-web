@@ -24,15 +24,15 @@
   padding: 0 10vw;
 }
 
-.container h1 {
+.container > main h1 {
   padding: 3px 2px;
 }
 
-.container h2 {
+.container > main h2 {
   padding: 3px 2px;
 }
 
-.container p {
+.container > main p {
   width: 100%;
   margin: 1rem 0;
 }
@@ -48,7 +48,7 @@
   margin: 0 auto;
 }
 
-.container pre {
+.container > main pre {
   flex: 1;
 
   background: #3f4447;

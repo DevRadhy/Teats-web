@@ -61,6 +61,10 @@
     flex-direction: column-reverse;
   }
 
+  .container > section {
+    margin: 2rem 0 1rem 0;
+  }
+
   .container > section:first-child {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);

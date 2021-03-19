@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1rem 0;
+}
+
+.container label {
+  width: 100%;
+  font-weight: 600;
+}
+
+.container select {
+  max-width: 400px;
+  height: 2.2rem;
+
+  background: var(--white);
+
+  margin-top: 5px;
+  padding: 0 10px;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
