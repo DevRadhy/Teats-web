@@ -98,11 +98,13 @@ export default function FeederForm() {
             name="payment"
             value={payment}
             onChange={(e) => setPayment(e.target.value)}
+            options={[
+              { value: 0, label: 'Selectione um meio de pagamento' },
+              { value: 1, label: 'Cartão' },
+              { value: 2, label: 'Dinheiro' },
+              { value: 3, label: 'Ambos' },
+            ]}
           >
-            <option disabled value="0">Selecione um meio de pagamento</option>
-            <option value="1">Cartão</option>
-            <option value="2">Dinheiro</option>
-            <option value="3">Ambos</option>
           </Select>
         </fieldset>
 
@@ -118,7 +120,10 @@ export default function FeederForm() {
 
           {foods.map((foodItem, index) => {
             return (
-              <div key={index}>
+              <div
+                key={index}
+                className={styles.foodContainer}
+              >
                 <Input
                   label="Nome"
                   name="name"
@@ -142,13 +147,14 @@ export default function FeederForm() {
                     name="category"
                     value={foodItem.category}
                     onChange={(e) => setFoodItemValue(index, 'category', e.target.value)}
-                  >
-                    <option disabled value="0">Selecione uma categoria</option>
-                    <option value="1">Lanches</option>
-                    <option value="2">Porções</option>
-                    <option value="3">Sobremesas</option>
-                    <option value="4">Combos</option>
-                  </Select>
+                    options={[
+                      { value: 0, label: 'Selecione um categoria' },
+                      { value: 1, label: 'Lanches' },
+                      { value: 2, label: 'Porções' },
+                      { value: 3, label: 'Sobremesas' },
+                      { value: 4, label: 'Combos' },
+                    ]}
+                  />
                 </section>
       
                 <Textarea
