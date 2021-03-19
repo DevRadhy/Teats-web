@@ -27,7 +27,11 @@
   position: relative;
 }
 
-.container fieldset > div > section{
+.container fieldset > .foodContainer {
+  margin-bottom: 4rem;
+}
+
+.container fieldset > .foodContainer > section{
   display: flex;
 }
 
@@ -35,9 +39,11 @@
   display: flex;
   align-items: center;
 
+  background: none;
   color: var(--green);
 
   border: none;
+  outline: none;
 
   font-size: 1rem;
   font-weight: 700;
@@ -46,17 +52,23 @@
 
   position: absolute;
   right: 0;
+
+  transition: filter 0.2s
+}
+
+.container fieldset > button:hover {
+  filter: brightness(0.9);
 }
 
 .container fieldset button > img {
   margin-right: 8px;
 }
 
-.container fieldset div > section > div:first-child input {
+.container fieldset .foodContainer > section > div:first-child input {
   width: 8rem;
 }
 
-.container fieldset div > section > div:last-child {
+.container fieldset .foodContainer > section > div:last-child {
   flex: 1;
   margin-left: 1rem;
 }
