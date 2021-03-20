@@ -11,7 +11,7 @@
 }
 
 .container textarea {
-  width: 80vw;
+  width: 100%;
   max-width: 400px;
   min-height: 3.8rem;
 

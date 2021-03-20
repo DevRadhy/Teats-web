@@ -8,23 +8,50 @@
 }
 
 .container form {
+  width: 80vw;
+  max-width: 400px;
   margin: 3rem 0;
 }
 
 .container legend {
+  width: 100%;
   color: #888888;
-
   font-size: 1rem;
   font-weight: 700;
-
   margin: 1rem 0;
 }
 
 .container fieldset {
+  width: 100%;
   border: none;
   margin-bottom: 2rem;
+}
 
-  position: relative;
+.container fieldset > button {
+  display: flex;
+
+  margin: 0 100%;
+  transform: translateX(-100%);
+  
+  background: none;
+  color: var(--green);
+
+  border: none;
+  
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  
+  transition: filter 0.2s
+}
+
+.container fieldset button > img {
+  margin-right: 8px;
+}
+
+.container fieldset > button:hover {
+  filter: brightness(0.9);
 }
 
 .container fieldset > .foodContainer {
@@ -32,43 +59,16 @@
 }
 
 .container fieldset > .foodContainer > section{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'price category category';
+  gap: 1rem;
 }
 
-.container fieldset > button {
-  display: flex;
-  align-items: center;
-
-  background: none;
-  color: var(--green);
-
-  border: none;
-  outline: none;
-
-  font-size: 1rem;
-  font-weight: 700;
-
-  cursor: pointer;
-
-  position: absolute;
-  right: 0;
-
-  transition: filter 0.2s
+.container .foodContainer > section > div:first-child {
+  grid-area: price;
 }
 
-.container fieldset > button:hover {
-  filter: brightness(0.9);
-}
-
-.container fieldset button > img {
-  margin-right: 8px;
-}
-
-.container fieldset .foodContainer > section > div:first-child input {
-  width: 8rem;
-}
-
-.container fieldset .foodContainer > section > div:last-child {
-  flex: 1;
-  margin-left: 1rem;
+.container .foodContainer > section > div:last-child {
+  grid-area: category;
 }
