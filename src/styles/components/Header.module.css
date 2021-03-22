@@ -18,14 +18,15 @@
   display: flex;
   justify-content: space-between;
 
-  width: -webkit-fill-available;
-
-  margin: 1rem;
+  width: 100%;
 }
 
 .container > header img {
   width: 2.2rem;
   height: 2.2rem;
+
+  margin: 0 1rem;
+
   cursor: pointer;
 
   border-radius: 50%;
