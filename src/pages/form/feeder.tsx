@@ -69,6 +69,7 @@ export default function FeederForm() {
             placeholder="Digite o nome comercial que você representa"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
 
           <Input
@@ -175,6 +176,15 @@ export default function FeederForm() {
           })}
 
         </fieldset>
+
+        <section className={styles.sendContainer}>
+          <span>
+            <img src="/icons/alert-sharp.svg" alt="Atenção"/>
+            Quando você envia esse formulário você concorda com as politicas de privacidade, realmente está se inscrevendo em nome do estabelecimento que você representa, e que irá ofercer o melhor serviço para todos os usuários do app.
+          </span>
+
+          <button type="submit">Enviar</button>
+        </section>
       </form>
 
       <Footer />

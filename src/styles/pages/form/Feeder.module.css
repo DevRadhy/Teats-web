@@ -72,3 +72,38 @@
 .container .foodContainer > section > div:last-child {
   grid-area: category;
 }
+
+.container .sendContainer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sendContainer > span {
+  max-width: 16rem;
+
+  display: flex;
+}
+
+.sendContainer > span img {
+  width: 24px;
+  height: 24px;
+}
+
+.sendContainer button {
+  font-size: 1rem;
+  font-weight: 700;
+
+  width: 6rem;
+  height: 2.6rem;
+
+  background: var(--green);
+
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: none;
+
+  cursor: pointer;
+}
