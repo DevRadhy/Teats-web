@@ -5,7 +5,7 @@ export function FoodCard() {
     <div className={styles.container}>
       <div className={styles.gridContainer}>
         <div>
-          <img src="https://images.unsplash.com/photo-1607290817806-e93c813ff329?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=640&q=75" alt="Food"/>
+          <img src="https://images.unsplash.com/photo-1607290817806-e93c813ff329?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=320&q=50" alt="Food"/>
         </div>
 
         <div>

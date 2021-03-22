@@ -1,4 +1,4 @@
-.container section > img:first-child {
+.container > header .profileImage {
   width: 10rem;
   height: 10rem;
 
@@ -7,27 +7,54 @@
   margin-top: 1rem;
 }
 
+.container > header .filterContainer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 24px;
+  overflow: hidden;
+  
+  margin: 0 1rem 2rem 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  transition: 1s;
+}
+
+.container > header .filterContainer:hover {
+  width: 100%;
+}
+
 .container .filter {
   width: 24px;
   height: 24px;
 
-  margin: 1rem;
+  margin-left: 1rem;
 
   cursor: pointer;
 
   transition: filter 0.2s;
 }
 
-.container .filter {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  margin-bottom: 2rem;
-}
-
 .container .filter:hover {
   filter: brightness(0.95);
+}
+
+.filterContainer > select {
+  background: none;
+  color: var(--white );
+  
+  font-weight: 600;
+
+  border: none;
+  outline: none;
+}
+
+.filterContainer > select > option {
+  color: #000000;
 }
 
 .gridContainer {
@@ -63,12 +90,12 @@
   display: flex;
   align-items: center;
 
-  transition: filter 0.2s;
+  transition: 0.6s;
 }
 
 .container > button:hover {
   filter: brightness(0.9);
-  animation: rotate 0.2s linear;
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1080px) {
@@ -83,15 +110,5 @@
     margin: 1rem auto;
 
     grid-template-columns: 1fr;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(-45deg);
-  }
-
-  to {
-    transform: rotate(0);
   }
 }

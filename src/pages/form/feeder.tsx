@@ -1,11 +1,12 @@
+import { useState } from "react";
 import { Input } from "../../components/Input";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { Select } from "../../components/Select";
 import { Textarea } from "../../components/Textarea";
+import Head from "next/head";
 
 import styles from '../../styles/pages/form/Feeder.module.css';
-import { useState } from "react";
 
 export default function FeederForm() {
   const [name, setName] = useState('');
@@ -49,6 +50,10 @@ export default function FeederForm() {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Teats | Feeder</title>
+      </Head>
+
       <Header
         text="Obrigado por se juntar a nós e querer levar alegria em uma caixinha"
         smallText="Preencha o fomulário para continuar"
@@ -160,8 +165,8 @@ export default function FeederForm() {
                 <Textarea
                   label="Descrição"
                   name="description"
-                  placeholder="Descrição do produto em até 32 caracteres"
-                  maxLength={32}
+                  placeholder="Descrição do produto em até 255 caracteres"
+                  maxLength={255}
                   value={foodItem.description}
                   onChange={(e) => setFoodItemValue(index, 'description', e.target.value)}
                 />
