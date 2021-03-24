@@ -3,6 +3,12 @@ title: 'About Us'
 date: '2021-03-14'
 ---
 
+# Introdução
+
+![banner](/About-us-assets/Banner-Logo.jpg)
+
+Nesse guia falaremos quem somos, como surgimos, e você também poderá ver sobre os **Easter eggs** espalhados pelo app além de encotrar nossso contato para enviar seu **feedback!**.
+
 # Quem somos
 
 **TeatsApp** é uma plataforma que aproxima as pessoas do que elas gostam, **comida** 🍣. O app foi criado com **intuído educacional**, não visando lucros, por isso que todos podemos usar de graça =). O app foi criado por mim, **Lucas Jantsch Guedes**, para todos vocês que usam o app com carinho, tanto quem pede quanto quem faz parte do time de pessoas que levam **alegria em uma caixinha ♥️.**
@@ -11,9 +17,7 @@ date: '2021-03-14'
 
 A ideia surgiu a partir de convivências, que mostram que encontrar lugares para comer leva tempo e é mais difícil do que parece, primeiramente, para pedir você precisa de um número, e como conseguir esse número? antes era preciso ir ao local ou pegar um número em alguma rede social, e depois? pedir as opções que o lugar oferece, e isso pode não parecer tão custoso, mas isso acontece em apenas um lugar, e se você quiser comer um sobremesa, mas aquele lugar só oferece outros alimentos, mais uma vez você precisa achar outro lugar que ofereça o desejado, pegar o número, e pedir as opções, ai que nós surgimos, para facilitar a vida de todos, porque nessa história os estabelecimentos também gastam tempo, toda vez tendo que mandar as opções e serviços. Com o **Teats**, o lugar expões as opões, oferece um meio de contato, **e o que você precisa fazer é somete filtrar, a categoria e meio de pagamento, e pronto**, as opções vão aparecer para você, ai é só escolher o que mais de agrada, entrar em contato e esperar chegar, é simples, e você não se limita a um lugar por vez, todos estão aqui para oferecer o melhor serviço com  o selo de quem cuidadosamente analisa cada perfil, e cuida para que nenhuma regra seja descumprida e que esteja tudo em ordem para a melhor experiencia possível 💚.
 
-![banner](/About-us-assets/Banner-Logo.jpg)
-
-# Não pare aqui...
+# Easter Eggs
 
 E isso não é tudo, você pode ter visto em algumas telas algo como, **"CUIDADO! essa Página tem Poderes de Super Vaca"**, bem eles foram postos la de proposito, são os nossos **Easter Eggs**, mas o que significa isso, é isso que mostraremos agora 😃.
 
