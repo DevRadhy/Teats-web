@@ -20,8 +20,6 @@ export default function Post({ postData }) {
 
       <h1 className={styles.title}>{postData.title}</h1>
       
-      <img src="/favicon.png" alt="Teats Logo"/>
-
       <main>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </main>
