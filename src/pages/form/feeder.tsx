@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { FormEventHandler, useState } from "react";
 import { Input } from "../../components/Input";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -59,7 +59,9 @@ export default function FeederForm() {
         smallText="Preencha o fomulário para continuar"
       />
 
-      <form>
+      <form
+        onSubmit={(e) => e.preventDefault}
+      >
         <legend>Feeder</legend>
         <fieldset>
           <Input
@@ -79,6 +81,7 @@ export default function FeederForm() {
             placeholder="email@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
 
           <Input
@@ -88,6 +91,7 @@ export default function FeederForm() {
             placeholder="(00) 0 00000000"
             value={contact}
             onChange={(e) => setContact(e.target.value)}
+            required
           />
 
           <Textarea
@@ -97,6 +101,7 @@ export default function FeederForm() {
             maxLength={255}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
+            required
           />
 
           <Select
@@ -104,6 +109,7 @@ export default function FeederForm() {
             name="payment"
             value={payment}
             onChange={(e) => setPayment(e.target.value)}
+            required
             options={[
               { value: 0, label: 'Selectione um meio de pagamento' },
               { value: 1, label: 'Cartão' },
@@ -137,6 +143,7 @@ export default function FeederForm() {
                   placeholder="O nome do produto"
                   value={foodItem.name}
                   onChange={(e) => setFoodItemValue(index, 'name', e.target.value)}
+                  required
                 />
       
                 <section>
@@ -146,6 +153,7 @@ export default function FeederForm() {
                     type="number"
                     value={foodItem.price}
                     onChange={(e) => setFoodItemValue(index, 'price', e.target.value)}
+                    required
                   />
       
                   <Select
@@ -153,6 +161,7 @@ export default function FeederForm() {
                     name="category"
                     value={foodItem.category}
                     onChange={(e) => setFoodItemValue(index, 'category', e.target.value)}
+                    required
                     options={[
                       { value: 0, label: 'Selecione um categoria' },
                       { value: 1, label: 'Lanches' },
@@ -170,6 +179,7 @@ export default function FeederForm() {
                   maxLength={255}
                   value={foodItem.description}
                   onChange={(e) => setFoodItemValue(index, 'description', e.target.value)}
+                  required
                 />
               </div>
             );
