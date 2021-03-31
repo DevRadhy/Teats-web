@@ -15,7 +15,6 @@
 
   display: grid;
   grid-template-columns: 20% 80%;
-  gap: 5px;
   
   transition: 0.2s;
 }
@@ -30,7 +29,7 @@
 }
 
 .gridContainer > div + div {
-  margin-right: 1rem;
+  margin-left: 1rem;
 
   display: flex;
   flex-direction: column;
@@ -39,7 +38,7 @@
 .gridContainer header h1 {
   font-size: 1.4rem;
   text-align: end;
-  margin-top: 10px;
+  margin: 10px 10px 0 0;
 }
 
 .gridContainer main {
@@ -51,7 +50,7 @@
   display: flex;
   align-items: center;
 
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .gridContainer footer > span {
@@ -78,15 +77,15 @@
   width: 6.8rem;
   height: 2rem;
 
-  transition: background-color 0.2s;
+  transition: filter 0.2s;
 }
 
 .gridContainer footer > button:hover {
-  background: var(--green-hover);
+  filter: brightness(0.9);
 }
 
 .gridContainer footer > button img {
   width: 20px;
   height: 20px;
-  margin: 0 5px 0 0;
+  margin-right: 5px;
 }
