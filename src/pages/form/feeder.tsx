@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from "react";
+import { FormEvent, useState } from "react";
 import { Input } from "../../components/Input";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
@@ -48,6 +48,12 @@ export default function FeederForm() {
     setFoods(updateFoodItems);
   }
 
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+
+    console.log(e.target);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -60,7 +66,8 @@ export default function FeederForm() {
       />
 
       <form
-        onSubmit={(e) => e.preventDefault}
+        id="feeder-form"
+        onSubmit={(e) => handleSubmit(e)}
       >
         <legend>Feeder</legend>
         <fieldset>
@@ -87,7 +94,7 @@ export default function FeederForm() {
           <Input
             label="Contato"
             name="contact"
-            type="phone"
+            type="tel"
             placeholder="(00) 0 00000000"
             value={contact}
             onChange={(e) => setContact(e.target.value)}
@@ -98,6 +105,7 @@ export default function FeederForm() {
             label="Descrição"
             name="description"
             placeholder="Descrição de até 255 caracteres"
+            minLength={32}
             maxLength={255}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
@@ -145,6 +153,16 @@ export default function FeederForm() {
                   onChange={(e) => setFoodItemValue(index, 'name', e.target.value)}
                   required
                 />
+
+                <Input
+                  label="Image"
+                  name="food-image"
+                  type="url"
+                  placeholder="https://"
+                  value={foodItem.name}
+                  onChange={(e) => setFoodItemValue(index, 'name', e.target.value)}
+                  required
+                />
       
                 <section>
                   <Input
@@ -176,6 +194,7 @@ export default function FeederForm() {
                   label="Descrição"
                   name="description"
                   placeholder="Descrição do produto em até 255 caracteres"
+                  minLength={32}
                   maxLength={255}
                   value={foodItem.description}
                   onChange={(e) => setFoodItemValue(index, 'description', e.target.value)}
@@ -193,7 +212,12 @@ export default function FeederForm() {
             Quando você envia esse formulário você concorda com as politicas de privacidade, realmente está se inscrevendo em nome do estabelecimento que você representa, e que irá ofercer o melhor serviço para todos os usuários do app.
           </span>
 
-          <button type="submit">Enviar</button>
+          <button
+            form="feeder-form"
+            type="submit"
+          >
+            Enviar
+          </button>
         </section>
       </form>
 
