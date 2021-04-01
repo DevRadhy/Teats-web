@@ -1,7 +1,11 @@
+import Head from "next/head";
 import { useState } from "react";
 import { Input } from "../../components/Input";
 import { Select } from "../../components/Select";
 import { Textarea } from "../../components/Textarea";
+import { Header } from "../../components/Header"
+
+import styles from '../../styles/pages/profile/User.module.css';
 
 export default function Profile() {
   const [name, setName] = useState('FeederPlace');
@@ -11,15 +15,41 @@ export default function Profile() {
   const [payment, setPayment] = useState('3');
 
   return (
-    <div className="container">
-      <div className="user-profile">
-        <div className="user-card">
-          <img src="https://github.com/DevRadhy.png" alt="Profile Image"/>
-          <strong>Lucas</strong>
-        </div>
-      </div>
+    <div className={styles.container}>
+      <Head>
+        <title>Teats | {name}</title>
+      </Head>
 
-      <form className="user-informations">
+      <Header
+        text="Configurações de usuário."
+      /> 
+
+      <aside className={styles.card}>
+        <img src="https://github.com/DevRadhy.png" alt="Profile Image"/>
+        <strong>Lucas</strong>
+
+        <main>{description}</main>
+
+        <section>
+          <button
+            form="user-form"
+            type="submit"
+            className={styles['save-button']}
+          >
+            Salvar
+          </button>
+
+          <button
+            type="button"
+            className={styles['cancel-button']}
+          >
+            Cancelar
+          </button>
+        </section>
+
+      </aside>
+
+      <form id="user-form">
         <fieldset>
           <Input
             label="Nome"
@@ -42,7 +72,7 @@ export default function Profile() {
           />
 
           <Input
-            label="Contato"
+            label="Mostre como os clientes chegam até vocẽ"
             name="contact"
             type="tel"
             placeholder="(00) 0 00000000"
@@ -52,7 +82,7 @@ export default function Profile() {
           />
 
           <Textarea
-            label="Descrição"
+            label="Mostre o porque você é especial"
             name="description"
             placeholder="Descrição de até 255 caracteres"
             minLength={32}
@@ -63,7 +93,7 @@ export default function Profile() {
           />
 
           <Select
-            label="Pagamento"
+            label="Que tipo de pagamentos são aceitos"
             name="payment"
             value={payment}
             onChange={(e) => setPayment(e.target.value)}
