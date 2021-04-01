@@ -209,7 +209,7 @@ export default function FeederForm() {
         <section className={styles.sendContainer}>
           <span>
             <img src="/icons/alert-sharp.svg" alt="Atenção"/>
-            Quando você envia esse formulário você concorda com as politicas de privacidade, realmente está se inscrevendo em nome do estabelecimento que você representa, e que irá ofercer o melhor serviço para todos os usuários do app.
+            Quando você envia esse formulário você concorda com as politicas de privacidade e termos do app.
           </span>
 
           <button
